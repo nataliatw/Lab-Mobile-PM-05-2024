@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/IV_Profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/TV_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="1dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:text="Nataliaprtw_" />
+
+            <TextView
+                android:id="@+id/TV_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TV_username"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="-25dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:text="Chryxwntrx" />
+
+            <ImageView
+                android:id="@+id/IV_Delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/trash" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TV_Desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="anyeongg" />
+
+        <ImageView
+            android:id="@+id/IV_Postingan"
+            android:layout_width="370dp"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+
+    </LinearLayout>
+
+</RelativeLayout>
