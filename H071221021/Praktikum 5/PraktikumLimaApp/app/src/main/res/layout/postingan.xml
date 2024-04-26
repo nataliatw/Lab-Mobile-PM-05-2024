@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/IV_Profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/TV_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="1dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:text="Nataliaprtw_" />
+
+            <TextView
+                android:id="@+id/TV_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TV_username"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="-25dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                tools:text="Chryxwntrx" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/IV_Postingan"
+            android:layout_width="370dp"
+            android:layout_height="270dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+            <ImageView
+                android:id="@+id/like1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/heart__1_"/>
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/comments"/>
+            <RelativeLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/paper_plane"/>
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/bookmark"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TV_Desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="Hello Everybody!" />
+
+    </LinearLayout>
+
+</RelativeLayout>
